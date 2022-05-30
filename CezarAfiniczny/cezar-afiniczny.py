@@ -186,7 +186,7 @@ class CryptographicTool:
 
                 encrypted_line = i.encrypt(line_to_encrypt, key)
 
-                with open('./encrypted.txt', 'w') as encrypted_file:
+                with open('./crypto.txt', 'w') as encrypted_file:
                     encrypted_file.write(encrypted_line)
                     encrypted_file.close()
 
@@ -196,7 +196,7 @@ class CryptographicTool:
                 encrypted_line = ""
                 key = None
 
-                with open('./encrypted.txt', 'r') as encrypted:
+                with open('./crypto.txt', 'r') as encrypted:
                     line_to_encrypt = encrypted.readline()
                     encrypted.close()
 
@@ -209,7 +209,7 @@ class CryptographicTool:
 
                 encrypted_line = i.decrypt(line_to_encrypt, key)
 
-                with open('./decrypted.txt', 'w') as decrypted:
+                with open('./decrypt.txt', 'w') as decrypted:
                     decrypted.write(encrypted_line)
                     decrypted.close()
 
@@ -219,7 +219,7 @@ class CryptographicTool:
                 encrypted_line = ""
                 plaintext_line = ""
 
-                with open('./encrypted.txt', 'r') as encrypted:
+                with open('./crypto.txt', 'r') as encrypted:
                     encrypted_line = encrypted.readline()
                     encrypted.close()
 
@@ -244,7 +244,7 @@ class CryptographicTool:
             if i.compare_sign(option):
                 encrypted_line = ""
 
-                with open('./encrypted.txt', 'r') as encrypted:
+                with open('./crypto.txt', 'r') as encrypted:
                     encrypted_line = encrypted.readline()
                     encrypted.close()
 
