@@ -1,0 +1,1 @@
+personalconcat.txt i personal_concat.txt są postprocesowanymi plikami. Zawierają konkatenację pliku hash-.pdf i odpowiednio personal.txt i personal_.txt
